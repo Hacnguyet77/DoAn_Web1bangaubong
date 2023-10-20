@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Panda Store</title>
+    <link rel="shortcut icon" href="img/favorite.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["gau bong", "goi","phu kien"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Chào mừng đến với trang web bán gấu bông của chúng tôi!
+                </p>
+                <br />
+                <p>
+                    Nếu bạn đang tìm kiếm một món quà đáng yêu và ấm áp cho người thân hay bạn bè của mình, thì đây là nơi để bạn tìm thấy. 
+                    Chúng tôi cung cấp một loạt các gấu bông đáng yêu và chất lượng cao, từ những con gấu nhỏ xinh xắn cho đến những con gấu lớn và đầy cá tính.<br />
+                    Để nâng cao thương hiệu của mình, mục tiêu của chúng tôi trong thời gian tới là cung cấp đến tận
+                    tay khách hàng những sản phẩm chính hãng với chất lượng đảm bảo và uy tín cũng như giá cả hợp lý
+                    nhất.<br />
+                    Tất cả các sản phẩm của chúng tôi đều được làm từ các vật liệu mềm mại và an toàn cho trẻ em, đảm bảo rằng bạn có thể sử dụng chúng với tâm trí an tâm. 
+                    Chúng tôi cũng có các mẫu mã đa dạng, từ những con gấu truyền thống đến những con gấu có hình dáng độc đáo và phong cách hiện đại.<br />
+                    Chúng tôi xin chân thành cảm ơn tất cả các khách hàng đã, đang và sẽ ủng hộ chúng tôi.
+                    <br />
+                    Trang web của chúng tôi cũng rất thuận tiện để sử dụng, với giao diện dễ sử dụng và các tính năng tìm kiếm và lọc sản phẩm để bạn có thể tìm kiếm và mua sắm một cách dễ dàng. 
+                    Chúng tôi cũng cung cấp giao hàng nhanh chóng và đáng tin cậy, đảm bảo rằng sản phẩm của bạn sẽ được giao đến tay bạn trong thời gian ngắn nhất có thể.
+                </p>
+                <P>
+                    Với chất lượng sản phẩm tốt và dịch vụ khách hàng tuyệt vời, chúng tôi hy vọng rằng bạn sẽ tìm thấy một con gấu bông yêu thích của mình trên trang web của chúng tôi. Hãy truy cập ngay và khám phá những sản phẩm đáng yêu của chúng tôi!
+                </P>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
